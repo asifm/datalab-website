@@ -1,0 +1,7 @@
+node_modules
+.vitepress/dist
+.vitepress/cache
+.vscode
+# Any file or folder with a leading underscore is private
+_* 
+
