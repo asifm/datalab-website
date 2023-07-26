@@ -18,14 +18,8 @@ export default defineConfig({
         // we don't need logo, nav, sociallinks
         sidebar: [
             {
-                text: "Databases",
-                items: [
-                    { text: "Database 1", link: "databases/database1" },
-                    { text: "Database 2", link: "databases/database2" },
-                ],
-            },
-            {
-                text: "Getting Started Guides",
+                text: "Guides",
+                link: "/guides/",
                 items: [
                     {
                         text: "API Examples",
@@ -34,6 +28,22 @@ export default defineConfig({
                     { text: "Markdown", link: "guides/markdown-examples" },
                 ],
             },
+            {
+                text: "Databases",
+                link: "/databases/",
+                items: [
+                    { text: "Database 1", link: "databases/database1" },
+                    { text: "Database 2", link: "databases/database2" },
+                    {
+                        text: "SEC Databases",
+                        link: "databases/sec-databases/",
+                        items: [
+                            { text: "Database 3", link: "databases/sec-databases/database3" },
+                        ],
+                    },
+                ],
+            },
+            
         ],
     },
 });
