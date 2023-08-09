@@ -1,7 +1,7 @@
 ---
 next:
-  text: Get Connected
-  link: /guides/get-connected
+  text: Making a Query
+  link: /guides/making-a-query/
 ---
 
 <script setup>

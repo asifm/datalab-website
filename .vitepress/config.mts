@@ -61,14 +61,19 @@ export default defineConfig({
                       text: "Making a Query",
                       link: "/guides/making-a-query/",
                       items: [
-                        {text: "Using a SQL Client", link: "/guides/making-a-query/using-a-sql-client"}
+                        {text: "Using a SQL Client", link: "/guides/making-a-query/using-a-sql-client"},
+                        {text: "Using Python", link: "/guides/making-a-query/using-python/"},
+                        {text: "Using R", link: "/guides/making-a-query/using-r/"},
                       ]
                   },
                   {
-                      text: "API Examples",
-                      link: "guides/api-examples",
+                      text: "Using SQL",
+                      link: "guides/using-sql",
                   },
-                  { text: "Markdown", link: "guides/markdown-examples" },
+                  {
+                      text: "Best Practices",
+                      link: "guides/best-practices",
+                  },
               ],
           },
           {

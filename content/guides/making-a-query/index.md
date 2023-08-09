@@ -1,7 +1,10 @@
 ---
 next:
-  text: Next Thing
-  link: /guides/get-connected
+  text: Query Using a SQL Client
+  link: /guides/making-a-query/using-a-sql-client
+prev:
+  text: Getting Started
+  link: /guides/getting-started
 ---
 
 <script setup>
@@ -12,7 +15,7 @@ import CenterLevel from '../../../.vitepress/theme/components/CenterLevel.vue'
 # Making a Query
 
 <!-- :::: info Prerequisites
-1. [Request access to the Data Lab](https://servicedesk.darden.virginia.edu/support/catalog/items/90?target=_blank) using your Darden Microsoft account. At this time, only the Darden faculty and select staff are eligible for access to the platform. Once you've been approved by administrators, you'll receive an email and gain the ability to log in. 
+1. [Request access to the Data Lab](https://servicedesk.darden.virginia.edu/support/catalog/items/90) using your Darden Microsoft account. At this time, only the Darden faculty and select staff are eligible for access to the platform. Once you've been approved by administrators, you'll receive an email and gain the ability to log in. 
 :::: -->
 
 Once you have gained access to the Research Data Lab, you can connect and make queries through one of the following ways:
@@ -43,6 +46,6 @@ A SQL client is a software application that directly connects to the server, sen
 You can also make SQL queries from different programming languages by using drivers and language adapters (libraries). The benefit is that your query result is automatically converted into familiar dataframes and programming objects. 
 
 <CenterLevel>
-  <ActionButton href='./using-a-sql-client' target=''>Query Using Python</ActionButton>
-  <ActionButton href='./using-a-sql-client' target=''>Query Using R</ActionButton>
+  <ActionButton href='./using-python/' target=''>Query Using Python</ActionButton>
+  <ActionButton href='./using-r/' target=''>Query Using R</ActionButton>
 </CenterLevel>

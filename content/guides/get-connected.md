@@ -14,7 +14,7 @@ import CenterLevel from '../../.vitepress/theme/components/CenterLevel.vue'
 You can connect to the Research Data Lab to make queries through one of the following ways. 
 
 :::: info Prerequisites
-1. [Request access to the Data Lab](https://servicedesk.darden.virginia.edu/support/catalog/items/90?target=_blank) using your Darden Microsoft account. At this time, only the Darden faculty and select staff are eligible for access to the platform. Once you've been approved by administrators, you'll receive an email and gain the ability to log in. 
+1. [Request access to the Data Lab](https://servicedesk.darden.virginia.edu/support/catalog/items/90) using your Darden Microsoft account. At this time, only the Darden faculty and select staff are eligible for access to the platform. Once you've been approved by administrators, you'll receive an email and gain the ability to log in. 
 ::::
 
 
