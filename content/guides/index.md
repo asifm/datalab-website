@@ -10,10 +10,9 @@ Use the following guides and resources to learn more about using the Research Da
 
 
 - [Getting Started](./getting-started)
-- [Get Connected](./markdown-examples.md)
-- [Query Data with Azure Data Studio](./markdown-examples.md)
-- [Using SQL](./markdown-examples.md)
-- [Programming with Python](./markdown-examples.md)
-- [Programming with R](./markdown-examples.md)
-- [Best Practices](./markdown-examples.md)
-- [Bringing Your Own Data](./markdown-examples.md)
+- [Making a Query](./making-a-query/)
+  - [Using a SQL Client](./making-a-query/using-a-sql-client)
+  - [Using a Python](./making-a-query/using-python/)
+  - [Using a R](./making-a-query/using-r/)
+- [Using SQL](./using-sql)
+- [Best Practices](./best-practices)
