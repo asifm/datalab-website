@@ -1,0 +1,232 @@
+/**
+ * Customize default theme styling by overriding CSS variables:
+ * https://github.com/vuejs/vitepress/blob/main/src/client/theme-default/styles/vars.css
+ */
+
+/**
+ * Colors
+ * -------------------------------------------------------------------------- */
+
+ /* :root {
+  --vp-c-brand: #646cff;
+  --vp-c-brand-light: #747bff;
+  --vp-c-brand-lighter: #9499ff;
+  --vp-c-brand-lightest: #bcc0ff;
+  --vp-c-brand-dark: #535bf2;
+  --vp-c-brand-darker: #454ce1;
+  --vp-c-brand-dimm: rgba(100, 108, 255, 0.08);
+} */
+
+/**
+ * Component: Button
+ * -------------------------------------------------------------------------- */
+
+:root {
+  --vp-button-brand-border: var(--vp-c-brand-light);
+  --vp-button-brand-text: var(--vp-c-white);
+  --vp-button-brand-bg: var(--vp-c-brand);
+  --vp-button-brand-hover-border: var(--vp-c-brand-light);
+  --vp-button-brand-hover-text: var(--vp-c-white);
+  --vp-button-brand-hover-bg: var(--vp-c-brand-light);
+  --vp-button-brand-active-border: var(--vp-c-brand-light);
+  --vp-button-brand-active-text: var(--vp-c-white);
+  --vp-button-brand-active-bg: var(--vp-button-brand-bg);
+}
+
+/**
+ * Component: Home
+ * -------------------------------------------------------------------------- */
+
+/* :root {
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: -webkit-linear-gradient(
+    120deg,
+    #bd34fe 30%,
+    #41d1ff
+  );
+
+  --vp-home-hero-image-background-image: linear-gradient(
+    -45deg,
+    #bd34fe 50%,
+    #47caff 50%
+  );
+  --vp-home-hero-image-filter: blur(40px);
+} */
+
+@media (min-width: 640px) {
+  :root {
+    --vp-home-hero-image-filter: blur(56px);
+  }
+}
+
+@media (min-width: 960px) {
+  :root {
+    --vp-home-hero-image-filter: blur(72px);
+  }
+}
+
+/**
+ * Component: Custom Block
+ * -------------------------------------------------------------------------- */
+
+:root {
+  --vp-custom-block-tip-border: var(--vp-c-brand);
+  --vp-custom-block-tip-text: var(--vp-c-brand-darker);
+  --vp-custom-block-tip-bg: var(--vp-c-brand-dimm);
+}
+
+.dark {
+  --vp-custom-block-tip-border: var(--vp-c-brand);
+  --vp-custom-block-tip-text: var(--vp-c-brand-lightest);
+  --vp-custom-block-tip-bg: var(--vp-c-brand-dimm);
+}
+
+/**
+ * Component: Algolia
+ * -------------------------------------------------------------------------- */
+
+.DocSearch {
+  --docsearch-primary-color: var(--vp-c-brand) !important;
+}
+
+
+
+
+
+/**
+ * Customize default theme styling by overriding CSS variables:
+ * https://github.com/vuejs/vitepress/blob/main/src/client/theme-default/styles/vars.css
+ */
+
+/* Darden font Franklin Gothic URW https://fonts.adobe.com/fonts/franklin-gothic-urw */
+@font-face {
+  font-family: 'FranklinGothicURW';
+  font-display: fallback;
+  src: url('./assets/font/FranklinGothicURW-Hea.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FranklinGothicURW';
+  font-display: fallback;
+  src: url('./assets/font/FranklinGothicURW-Dem.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FranklinGothicURW';
+  font-display: fallback;
+  src: url('./assets/font/FranklinGothicURW-Med.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FranklinGothicURW';
+  font-display: fallback;
+  src: url('./assets/font/FranklinGothicURW-Boo.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  --vp-font-family-base: FranklinGothicURW;
+
+  --vp-c-brand: hsl(30, 100%, 45%);
+  --vp-c-brand-light: hsl(30, 100%, 55%);
+  --vp-c-brand-lighter: hsl(51, 100%, 47%);
+  --vp-c-brand-dark: hsl(225, 36%, 22%);
+  --vp-c-brand-darker: hsl(225, 36%, 12%);
+
+  --vp-c-text-light-1: hsl(225, 50%, 16%);
+  --vp-c-text-dark-1: hsl(225, 36%, 92%);
+
+}
+
+.dark {
+  --vp-c-bg: hsl(225, 36%, 22%);
+}
+
+/* .vp-doc h1 {
+  font-weight: 900;
+  font-size: 3rem;
+  line-height: 1.2;
+} */
+
+/* h2,
+h3 {
+  letter-spacing: 0.1em;
+  font-weight: 600;
+} */
+
+/* p,
+blockquote,
+table,
+pre {
+  font-weight: 300;
+  font-size: 1.125rem;
+  line-height: 1.6;
+} */
+
+/* header {
+  background-color: var(--vp-c-brand-lighter);
+  color: var(--vp-c-text-dark-1);
+  font-family: var(--vp-font-family-base);
+  font-weight: 900;
+  font-size: 1.75rem;
+  line-height: 1.2;
+  letter-spacing: 0.1em;
+  top: 100px !important;
+} */
+
+/* aside {
+  background-color: var(--vp-c-brand);
+  color: var(--vp-c-text-dark-1);
+  font-family: var(--vp-font-family-base);
+  font-size: 1.75rem;
+  line-height: 1.2;
+} */
+
+/* .VPDoc,
+.Layout {
+  position: relative !important;
+  top: 20px !important;
+  z-index: 30 !important;
+} */
+
+/* article.box h2 {
+  font-size: 1.5rem !important;
+  line-height: 1.2;
+} */
+
+article.box p {
+  font-size: 1.1rem !important;
+  line-height: 1.6;
+  /* color: var(--vp-c-text-1) !important; */
+}
+
+.VPHome .main {
+  margin-top: 50px !important;
+  /* font-size: 1.1rem !important;
+  line-height: 1.6; */
+}
+
+.VPHome .text {
+  font-size: 1.5rem !important;
+  line-height: 1.6;
+  padding-top: 1rem;
+  font-weight: 600;
+}
+
+
+.logo {
+  height: 100% !important;
+  margin-right: 16px !important;
+}
+
+.VPNav {
+  background-color: #fff;
+  border-bottom: 1px solid rgb(226, 226, 227);
+}

@@ -4,4 +4,4 @@ node_modules
 .vscode
 # Any file or folder with a leading underscore is private
 _* 
-
+*.DS_Store

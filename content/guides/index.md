@@ -1,6 +1,19 @@
+---
+next:
+  text: 'Getting Started'
+  link: '/guides/getting-started'
+---
+
 # Guides
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+Use the following guides and resources to learn more about using the Research Data Lab at Darden.
 
-- [API Examples](./api-examples.md)
-- [Markdown](./markdown-examples.md)
+
+- [Getting Started](./getting-started)
+- [Get Connected](./markdown-examples.md)
+- [Query Data with Azure Data Studio](./markdown-examples.md)
+- [Using SQL](./markdown-examples.md)
+- [Programming with Python](./markdown-examples.md)
+- [Programming with R](./markdown-examples.md)
+- [Best Practices](./markdown-examples.md)
+- [Bringing Your Own Data](./markdown-examples.md)

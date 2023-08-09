@@ -2,9 +2,7 @@
 layout: home
 hero:
   name: "Research Data Lab at Darden"
-  text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
-
-  Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit."
+  text: "The Research Data Lab is a cloud-based facility dedicated to supporting data-intensive research projects at Darden. It serves as a central hub where researchers can access and analyze large volumes of research data."
   actions:
     - text: "Get Started"
       link: "guides/"
@@ -13,21 +11,15 @@ hero:
       link: "databases/"
       theme: alt
 features:
-  - title: "What's New"
-    details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    link: "cmdline/cmdline-basics"
-    linkText: "Learn More"
-  - title: "Highlights 1"
-    details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    link: "databases/database1"
-    linkText: "Learn More"
-  - title: "Highlights 2"
-    details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    link: "cmdline/everyday-use"
-    linkText: "Learn More"
-  - title: "Highlight 3"
-    details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    link: "cmdline/processing-files"
-    linkText: "Learn More"
+  - title: "Big Data Analysis"
+    details: "With the power of parallel processing and distributed architecture, the Data Lab has capacity to analyze large databases (GBs to TBs) in seconds."
+  - title: "Familiar Software"
+    details: "No need to learn proprietary tools or sotware. Extract, explore and analyze data through familiar desktop clients like SQL, R and Python."
+  - title: "Fully Managed Databases"
+    details: "Make queries or join data right away. The Research Data Lab provides databases from public sources out of the box; in consistent formats and periodically updating when new data is released."
+  - title: "Bring Your Own Data"
+    details: "Researchers can transfer custom datasets to the platform for faster analysis. Once uploaded, users can also share datasets with other researchers for easy collaboration."
+  - title: "Data Governance and Security"
+    details: "Stringent protocols and safeguards are in place to ensure data privacy, compliance, and security."
 ---
 
