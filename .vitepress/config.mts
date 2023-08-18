@@ -33,65 +33,79 @@ export default defineConfig({
   lastUpdated: true,
   appearance: false,
   markdown: {
-      lineNumbers: true,
-      typographer: true,
-      defaultHighlightLang: "python",
+    lineNumbers: true,
+    typographer: true,
+    defaultHighlightLang: "python",
   },
   // scrollOffset: 48,
   assetsDir: './assets',
   themeConfig: {
-      // https://vitepress.dev/reference/default-theme-config
-      // we don't need logo, nav, sociallinks
-      logo: {src: '/darden.webp'},
-      nav: [
-          {text: "Guides", link: "/guides/"},
-          {text: "Databases", link: "/databases/"},
-          {text: "Contact Us", link: "/contact"},
-      ],
-      sidebar: [
+    // https://vitepress.dev/reference/default-theme-config
+    // we don't need logo, nav, sociallinks
+    logo: { src: '/darden.webp' },
+    nav: [
+      { text: "Guides", link: "/guides/" },
+      { text: "Databases", link: "/databases/" },
+      { text: "Contact Us", link: "/contact" },
+    ],
+    sidebar: [
+      {
+        text: "Guides",
+        link: "/guides/",
+        items: [
           {
-              text: "Guides",
-              link: "/guides/",
-              items: [
-                  {
-                      text: "Getting Started",
-                      link: "/guides/getting-started",
-                  },
-                  {
-                      text: "Making a Query",
-                      link: "/guides/making-a-query/",
-                      items: [
-                        {text: "Using a SQL Client", link: "/guides/making-a-query/using-a-sql-client"},
-                        {text: "Using Python", link: "/guides/making-a-query/using-python/"},
-                        {text: "Using R", link: "/guides/making-a-query/using-r/"},
-                      ]
-                  },
-                  {
-                      text: "Using SQL",
-                      link: "guides/using-sql",
-                  },
-                  {
-                      text: "Best Practices",
-                      link: "guides/best-practices",
-                  },
-              ],
+            text: "Getting Started",
+            link: "/guides/getting-started",
           },
           {
-              text: "Databases",
-              link: "/databases/",
-              items: [
-                  { text: "Database 1", link: "databases/database1" },
-                  { text: "Database 2", link: "databases/database2" },
-                  {
-                      text: "SEC Databases",
-                      link: "databases/sec-databases/",
-                      items: [
-                          { text: "Database 3", link: "databases/sec-databases/database3" },
-                      ],
-                  },
-              ],
+            text: "Making a Query",
+            link: "/guides/making-a-query/",
+            items: [
+              { text: "Using a SQL Client", link: "/guides/making-a-query/using-a-sql-client" },
+              { text: "Using Python", link: "/guides/making-a-query/using-python/" },
+              { text: "Using R", link: "/guides/making-a-query/using-r/" },
+            ]
           },
-          
-      ],
+          {
+            text: "Using SQL",
+            link: "guides/using-sql",
+          },
+          {
+            text: "Best Practices",
+            link: "guides/best-practices",
+          },
+        ],
+      },
+      {
+        text: "Databases",
+        link: '/databases/about',
+        items: [
+          { text: "General Info", link: "/databases/about" },
+          {
+            text: "List of All Databases",
+            link: '/databases/list/by-name',
+            items: [
+              { text: "By Name", link: '/databases/list/by-name' },
+              { text: "By Source", link: '/databases/list/by-source' },
+            ]
+          },
+          { text: "🌐 IMDb Non-Commercial Database" },
+          { text: "🌐 BLS Quarterly Census of Employment and Wages Database" },
+        ]
+        // link: "/databases/",
+        // items: [
+        //     { text: "Database 1", link: "databases/database1" },
+        //     { text: "Database 2", link: "databases/database2" },
+        //     {
+        //         text: "SEC Databases",
+        //         link: "databases/sec-databases/",
+        //         items: [
+        //             { text: "Database 3", link: "databases/sec-databases/database3" },
+        //         ],
+        //     },
+        // ],
+      },
+
+    ],
   },
 })

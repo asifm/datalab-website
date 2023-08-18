@@ -17,7 +17,9 @@ import CenterLevel from '../../.vitepress/theme/components/CenterLevel.vue'
 
 Structured Query Language (SQL for short, sometimes pronounced "sequel") is a language for managing and processing information in a [relational database](https://www.oracle.com/database/what-is-a-relational-database/). SQL provides a simple syntax to search, aggregate, or join datasets in a way that a computer can break down into a set of optimized instructions. Get familiar with SQL using this basic tutorial.
 
-Note: Not all versions of SQL are the same, but most are similar. The Research Data Lab uses Microsoft's Transact-SQL (T-SQL). 
+:::: info SQL Versions
+Not all versions of SQL are the same, but most are similar. The Research Data Lab uses Microsoft's Transact-SQL (T-SQL). 
+::::
 
 ## IMDb Demo Database
 For learning and exploring purposes, the IMDb non-commerical dataset is available in the Data Lab under the schema `imdb`. [See the full details of this database.](/#)
@@ -88,7 +90,8 @@ SELECT ...
 FROM ...
 WHERE condition_1 OR condition_2 ...;
 
--- Example: Select titles from 2019, with 120+ runtime minutes, starting with "Spider-Man"
+-- Example: Select titles from 2019, with 120+ runtime minutes, 
+-- starting with "Spider-Man"
 SELECT titleType, originalTitle, startYear, runtimeMinutes 
 FROM [imdb].[title_basics]
 WHERE startYear = 2019
@@ -98,7 +101,7 @@ AND originalTitle like 'Spider-Man%';
 
 
 ## Ordering Data
-To order results, use the `ORDER BY` clause followed by `ASC` for ascending or `DESC` for descending order. The default order is `DESC`
+To order results, use the `ORDER BY` clause followed by `ASC` for ascending or `DESC` for descending order. The default order is `DESC`.
 
 ```SQL
 -- Pattern:
@@ -115,12 +118,14 @@ ORDER BY originalTitle ASC;
 
 
 ## Getting Statistics
-SQL provides functions to compute common summary statistics. To use a function, provide a variable name as an argument to the function.  
+SQL provides [aggregate functions](https://learn.microsoft.com/en-us/sql/t-sql/functions/aggregate-functions-transact-sql?view=sql-server-ver16) to compute common summary statistics. To use a function, provide a column name as an argument to the function.  
 
-Use the `COUNT()` function to return the number of rows that matches the specified query.
+Use the `COUNT()` function to return the number of rows that matches the specified query. 
+- `COUNT(column_name)` returns how many rows have a value for that column (are not null)
+- `COUNT(*)` returns how many rows match the whole query
 ```SQL
 -- Pattern:
-SELECT COUNT(column_name)
+SELECT COUNT(column_name) -- OR: COUNT(*)
 FROM table_name
 WHERE condition;
 

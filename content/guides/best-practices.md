@@ -15,16 +15,16 @@ The Research Data Lab can be used to process and analyze data at large scale. Ho
 # Save Resources 
 On the cloud, the amount of data processed translates into a dollar cost. To prevent overconsuming resources follow these practices when querying data in SQL. It will not only save resources, it will also make your queries faster.
 
-## Narrow Your Query 
+## Narrow Your SQL Query 
 - Use `WHERE` filters to narrow down results to only data of interest.  
-- Avoid using `SELECT *` for querying tables/views with a large number of columns. Try to select the required columns only.
-- Use `TOP` to limit the rows (observations) returned when your search could potentially return a vast number of rows. 
+- Avoid selecting all columns with `SELECT *` for tables with a large number of columns. Try to select only the data you require.
+- Limit the rows (observations) returned using `TOP [number]` when your search could potentially return a vast number of rows. 
 
 ## Utilize SQL's Built-In Abilities 
-- Do aggregations on the cloud instead of pulling down raw data and processing it locally. To learn more, read up on [using SQL](/guides/using-sql).
+- Do aggregations (like `SUM`, `AVG`, `MIN`, `MAX`, or `COUNT`) on the cloud instead of pulling down raw data and processing it locally. To learn more, read up on [using SQL](/guides/using-sql).
 
 ## Test Before Running
-- If you expect a query returning a large output, it is recommended to first test the query by limiting the number of returned rows using the `TOP` keyword. Once the verification is successful, you can proceed to execute the complete query.
+- If you expect a query to return a large number of rows, it is recommended to first test the query by limiting the number of returned rows using the `TOP` keyword. Once the verification is successful, you can proceed to execute the complete query.
 - When preparing a large aggregation or join on the data, it is advisable to initially test the query on a subset or sample of the data. Once the test proves successful, you can proceed to execute the query on the entire dataset.
 
 &nbsp;  

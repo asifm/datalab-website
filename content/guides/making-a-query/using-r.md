@@ -46,10 +46,11 @@ You can also use other client apps that support SQL Server, like [SQL Server Man
 6. Under "Database" select **production**.
 7. Other fields do not have to be changed. Click **Connect** to save the connection information and login to the database. 
 
-Note: If you encounter the error "User account [...] not found in MSAL cache...", please follow [these instructions](https://cosmic-slime-284.notion.site/Data-Lab-MSAL-Cache-Error-Fix-4227d2f42cd54544876c376460410546?pvs=4).
-
-
 <ImageFrame src='./using-a-sql-client/create-a-new-connection.png' />
+
+:::: info Note: User Account Error
+If you encounter the error "User account [...] not found in MSAL cache...", please follow [these instructions](https://cosmic-slime-284.notion.site/Data-Lab-MSAL-Cache-Error-Fix-4227d2f42cd54544876c376460410546?pvs=4).
+::::
 
 ## Making a Query
 
