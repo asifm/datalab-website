@@ -19,7 +19,7 @@ To get started, request access using the Service Desk form linked below. Make su
 At this time, only the Darden research faculty and select staff members are eligible for access to the platform. For questions about eligibility, please [contact us](/contact).
 :::
 
-Once you've been approved by administrators, you'll receive an email and gain the ability to log in. In the meantime, feel free to read up on [getting connected](/#), [using sql](/$), or the [best practices](/#). 
+Once you've been approved by administrators, you'll receive an email and gain the ability to log in. In the meantime, feel free to read up on [getting connected](/#), [using sql](/#), or the [best practices](/#). 
 
 <CenterLevel>
   <ActionButton href='https://servicedesk.darden.virginia.edu/support/catalog/items/90'>Request Access Form</ActionButton>
